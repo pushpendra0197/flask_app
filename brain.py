@@ -8,6 +8,8 @@ import io
 from keras.preprocessing import image
 import os
 import base64
+import signal
+import sys
 
 app=Flask(__name__)
 Model=tensorflow.keras.models.load_model("Braintumor.keras")
