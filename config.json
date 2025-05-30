@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/custom-route", "destination": "/api/handler" }
+  ]
+}
