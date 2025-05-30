@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - Brain-Tumor-Detection
+name: Build and deploy Python app to Azure Web App - brain-tumor-detection
 
 on:
   push:
@@ -68,14 +68,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9120873B3ECF4E94A3A5A8B1DE90499E }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_AF7202574681473DACF4809E78E612A2 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_41FE2A070CD94E4EBB9E27F937BBC136 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E317C68F0FB44384A61ADE9031171DB9 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_DD60930545B2434EA2F04089FAE9C2FB }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_07290C062FCB40B8B2816FD912085515 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Brain-Tumor-Detection'
+          app-name: 'brain-tumor-detection'
           slot-name: 'Production'
           
