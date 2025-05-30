@@ -6,7 +6,6 @@ import cv2
 import tensorflow
 import io
 from keras.preprocessing import image
-import os
 import base64
 
 
